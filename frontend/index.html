@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Identification CNN</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Plant Identification</h1>
+      <p class="subtitle">Upload a plant image to identify its class.</p>
+
+      <label class="upload-box" for="imageInput">
+        <span id="uploadText">Choose an image</span>
+        <input id="imageInput" type="file" accept="image/*">
+      </label>
+
+      <img id="preview" class="preview hidden" alt="Selected plant">
+
+      <button id="predictButton" disabled>Predict Plant</button>
+
+      <div id="loading" class="status hidden">Analyzing image...</div>
+      <div id="error" class="error hidden"></div>
+
+      <div id="result" class="result hidden">
+        <h2 id="plantName"></h2>
+        <p>Confidence: <strong id="confidence"></strong></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

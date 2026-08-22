@@ -11,3 +11,4 @@ def test_model_forward_pass():
     x = tf.random.uniform((2, 224, 224, 3))
     y = model(x, training=False)
     assert y.shape == (2, 3)
+
